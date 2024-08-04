@@ -2,8 +2,8 @@
 
 require_once ('dbh.php');
 
-$email = $_POST['mailuid'];
-$password = $_POST['pwd'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
 $sql = "SELECT * from `alogin` WHERE email = '$email' AND password = '$password'";
 
