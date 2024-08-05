@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $sql);
 	<style>
 		
 		body{
-		background-color: #F0F2F5;
+		background-color: #90EE90;
 		}
 		
 		
@@ -31,179 +31,11 @@ $result = mysqli_query($conn, $sql);
     padding: 10px;
     border: 1px solid #ddd;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: relative;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* add bottom shadow */
-}
-
-  .topnav a {
-    float: left;
-    color: #E4E6EB;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .topnav-right {
-    float: right;
-    display: flex;
-    align-items: center;
-
-	
-  }
-
-  .topnav-left {
-    float: left;
-    display: flex;
-    align-items: center;
-
-	
-  }
-
-
-
-.topnav a img:hover {
-  filter: brightness(97%);
-}
-
-.topnav a img:hover + .second-icon {
-  opacity: 1;
-}
-
-.second-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-  .topnav .icon {
-    padding: 14px 16px;
-    font-size: 17px;
-    float: none;
-    text-align: center;
-	margin-bottom: 2vh;
-	
-  }
-
-
-  .topnav1 {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-	padding-left: 20px;
-	padding-right: 20px;
-	
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 3vh;
-
-  }
-
-  .topnav1 a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-
-.topnav1 a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .icon {
-  width: 20px;
-  height: 20px;
-  background-image: url("/Share/assets/men.png");
-}
-
-.topnav-left a img {
-  transition: transform 0.2s ease-in-out;
-  border-radius: 0;
-}
-
-.topnav-left a:hover img {
-  transform: scale(1.1);
-  border-radius: 50%;
-  background-color: #F5FFB7;
-}
-
-.sidenav {
-  height: 100%; /* full height */
-  width: 0; /* initial width */
-  position: fixed; /* fixed position */
-  z-index: 1; /* on top of other elements */
-  top: 0; /* from the top */
-  left: 0; /* from the left */
-  background-color: #ffffff; /* dark background */
-  overflow-x: hidden; /* hide horizontal scrollbar */
-  padding-top: 60px; /* add some padding */
-  transition: 0.5s; /* animate width change */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* add bottom shadow */
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
- 
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-
-  
-}
-
-.sidenav .closebtn img {
-  float: left;
-  margin-right: 22.4vh;
-  margin-top: 1vh; /* adjust the margin to your liking */
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: top;
-  height: 100%;
-}
-
-ul li a {
-  display: flex;
-  align-items: center;
-  margin-top: 1vh;
-}
-
-ul li a img {
-  margin-right: 10px;
-  border-radius: 10px; /* add a rounded corner effect */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* add a subtle shadow effect */
-}
 
 	</style>
 	<link rel="stylesheet" type="text/css" href="styleemplogin.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body>
 	
@@ -221,25 +53,22 @@ ul li a img {
  
   <ul style="list-style: none;">
   <li>
-    <a href="#">
+    <a href="uloginwel.php">
       <img src="assets/12.png" alt="Home" width="40" height="40">
       Home
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="raffle.php">
       <img src="assets/14.png" alt="Raffle Draw" width="40" height="40">
          Raffle 
     </a>
   </li>
+
+ 
+ 
   <li>
-    <a href="#">
-      <img src="assets/ref.png" alt="Refferals" width="40" height="40">
-      Refferals
-    </a>
-  </li>
-  <li>
-    <a href="#">
+    <a href="silver_shop.php">
       <img src="assets/16.png" alt="Shop" width="40" height="40">
       Shop
     </a>
@@ -298,7 +127,7 @@ ul li a img {
         <th align="center" class="rank-cell">Ranking</th>
         <th align="center" class="rank-cell">Profile</th>
         <th align="center" class="rank-cell">Account Name</th>
-        <th align="center" class="rank-cell">Date of Draw</th>
+       
 		<th align="center" class="rank-cell">Links</th>
         
 		<th align="center" class="rank-cell">Click Count</th>
@@ -315,7 +144,7 @@ ul li a img {
 					echo "<td>".$seq."</td>";
 					echo "<td><img src='process/".$employee['pic']."' height = 60px width = 60px></td>";
 					echo "<td>".$employee['clients']."</td>";
-					echo "<td>".$employee['dateofdraw']."</td>";
+				
 					
 					echo "<td><p id=\"carrier\"></p>
 					<a id=\"display\" href=\"" . $employee['link'] . "\" target=\"_blank\" onclick=\"showPopup(); return clickLimit(this);\">".$employee['link']."</a></td>";
@@ -476,13 +305,7 @@ submitBtn.addEventListener('click', (e) => {
   xhr.send(formData);
 });
 
-function openNav() {
-  document.getElementById("sidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
-}
   </script>
+  <script src="menu.js"></script>
 </body>
 </html>
